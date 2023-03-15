@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+  }
+
+.photo {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    justify-self: start;
+    display: block;
+} 
+
+.photo img {
+    width: 100%;
+}
+
+nav {
+    margin: 5em 0 2em;
+}
+
+#search {
+    display: flex;
+    width: 32vw;
+    margin: 0 auto;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.gallery {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+a {
+    display: flex;
+}
+
