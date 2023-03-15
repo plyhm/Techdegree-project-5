@@ -1,4 +1,4 @@
-
+//Filter function for search
 const search = document.getElementById('search');
 
 search.addEventListener('keyup', e => {
@@ -9,9 +9,9 @@ search.addEventListener('keyup', e => {
         const caption = galleryImg.getAttribute('data-caption');
         
         if(caption.toLowerCase().includes(searchValue)) {
-            galleryImg.style.display = 'block';
+            galleryImg.parentNode.style.display = 'block';
         } else {
-            galleryImg.style.display = 'none';
+            galleryImg.parentNode.style.display = 'none';
         }
     });
 });
